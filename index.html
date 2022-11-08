@@ -21,8 +21,9 @@
         }
     </style>
     <script>
+			
         var callAPI = (firstName,lastName)=>{
-            var myHeaders = new Headers();
+			var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
             var raw = JSON.stringify({"firstName":firstName,"lastName":lastName});
             var requestOptions = {
